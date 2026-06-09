@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="00-arm-rs_asm-v3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.87641888266442E-06 -0.000122302488725115 0.0243376121934547"
+        rpy="0 0 0" />
+      <mass
+        value="0.57955856181278" />
+      <inertia
+        ixx="0.00119615958394982"
+        ixy="5.20202350463136E-09"
+        ixz="1.98692425786805E-08"
+        iyy="0.000756877037842548"
+        iyz="-7.92936344693821E-07"
+        izz="0.00179812127287685" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.00817652280320541 0.00122584211922395 0.0331419658967293"
+        rpy="0 0 0" />
+      <mass
+        value="0.153290856769315" />
+      <inertia
+        ixx="8.36395541111985E-05"
+        ixy="-2.42894149718612E-07"
+        ixz="1.70198172900832E-05"
+        iyy="0.000124389841914116"
+        iyz="-6.17802350702458E-07"
+        izz="8.26866463660086E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="-0.00034283 -0.00098683 0.075"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.8"
+      upper="2.8"
+      effort="36"
+      velocity="50" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.117864812717456 -0.00342226413942967 -0.0271551938501484"
+        rpy="0 0 0" />
+      <mass
+        value="0.753322079867911" />
+      <inertia
+        ixx="0.000338401189820025"
+        ixy="-2.19615717346412E-06"
+        ixz="-6.64511269073389E-08"
+        iyy="0.00135911660800945"
+        iyz="3.80439331426788E-07"
+        izz="0.00145756735946203" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/motor_2_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla2_black.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla2_green.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.020343 0.027237 0.07"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="0"
+      effort="36"
+      velocity="50" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.103427154487799 -0.0664137912104635 -0.0271068687716704"
+        rpy="0 0 0" />
+      <mass
+        value="0.519938325740626" />
+      <inertia
+        ixx="0.000252344073966785"
+        ixy="-4.43433813294499E-05"
+        ixz="3.96747097015155E-07"
+        iyy="0.000735234896308731"
+        iyz="-9.63245007375431E-07"
+        izz="0.00083258579217878" />
+    </inertial>
+    <!--  <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/motor_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla3_black.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla3_green.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.236 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="0"
+      effort="36"
+      velocity="50" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0475544540775559 -0.0441113470158517 -0.0314111924918381"
+        rpy="0 0 0" />
+      <mass
+        value="0.163567538196875" />
+      <inertia
+        ixx="7.7975508447618E-05"
+        ixy="-1.38586638977534E-05"
+        ixz="-9.65831039585577E-08"
+        iyy="9.533104265555E-05"
+        iyz="1.53147733224403E-07"
+        izz="0.000112519535981427" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/motor_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.228 -0.072746 0.0045"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.79"
+      upper="1.69"
+      effort="14"
+      velocity="40" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0114400622356175 4.7907739316217E-06 0.0480487481818926"
+        rpy="0 0 0" />
+      <mass
+        value="0.150120457182895" />
+      <inertia
+        ixx="7.34238025911107E-05"
+        ixy="1.35700947009798E-08"
+        ixz="-8.58146433770359E-07"
+        iyy="5.5153884237714E-05"
+        iyz="-1.32742144977931E-08"
+        izz="5.29920095811017E-05" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/motor_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla5_green.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0.087 -0.048 -0.03075"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="14"
+      velocity="40" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="1.80196022567525E-05 2.48334592051007E-08 0.00434805764057547"
+        rpy="0 0 0" />
+      <mass
+        value="0.0182990324327459" />
+      <inertia
+        ixx="4.42273835852359E-06"
+        ixy="3.16758463739482E-12"
+        ixz="1.51852818442002E-10"
+        iyy="4.37185522080034E-06"
+        iyz="-2.21864017603015E-12"
+        izz="8.54299378942051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0.0365 0 0.048"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="14"
+      velocity="40" />
+  </joint>
+  <link
+    name="gripper_end">
+    <inertial>
+      <origin
+        xyz="-0.112751692515958 0.000128443070436966 -5.72602449749882E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.125579259385149" />
+      <inertia
+        ixx="0.000211221797544478"
+        ixy="-9.39238093125706E-09"
+        ixz="-1.35685782466862E-08"
+        iyy="4.54101628122951E-05"
+        iyz="1.32710893647166E-08"
+        izz="0.000196393425417945" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla7_green.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/motor_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j_gripper_end"
+    type="fixed">
+    <origin
+      xyz="0 0 0.16621"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="link6" />
+    <child
+      link="gripper_end" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gripper_left">
+    <inertial>
+      <origin
+        xyz="-0.00218008703135955 0.0187090355934181 0.00932188568692145"
+        rpy="0 0 0" />
+      <mass
+        value="0.0401440141138942" />
+      <inertia
+        ixx="1.09877964176176E-05"
+        ixy="-1.20749716257054E-07"
+        ixz="1.82133049194348E-08"
+        iyy="9.50146036720166E-06"
+        iyz="1.08273199151465E-06"
+        izz="9.30779991911125E-06" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left"
+    type="prismatic">
+    <origin
+      xyz="-0.041939 -7.3385E-05 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="gripper_end" />
+    <child
+      link="gripper_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.05"
+      effort="500"
+      velocity="10" />
+  </joint>
+  <link
+    name="gripper_right">
+    <inertial>
+      <origin
+        xyz="0.00218008703135955 -0.018709035593418 0.00932188568692151"
+        rpy="0 0 0" />
+      <mass
+        value="0.0401440141138941" />
+      <inertia
+        ixx="1.09877964176176E-05"
+        ixy="-1.20749716257051E-07"
+        ixz="-1.82133049194406E-08"
+        iyy="9.50146036720163E-06"
+        iyz="-1.08273199151465E-06"
+        izz="9.30779991911128E-06" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual> -->
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/pla_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/cnc_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-arm-rs_asm-v3/meshes/gripper_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right"
+    type="prismatic">
+    <origin
+      xyz="-0.041939 7.3385E-05 0"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="gripper_end" />
+    <child
+      link="gripper_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.0715"
+      effort="500"
+      velocity="10" />
+  </joint>
+</robot>
