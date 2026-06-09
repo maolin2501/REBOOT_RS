@@ -1,0 +1,19 @@
+# reBotArm B601-RS 夹爪配置文件 (RobStride RS00)
+
+channel: can0
+
+gripper:
+  - name: gripper
+    motor_id: 0x07
+    feedback_id: 0xFD
+    model: "rs-00"
+    vendor: "robstride"
+    MIT:
+      kp: 8.0
+      kd: 1.0
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 3.0

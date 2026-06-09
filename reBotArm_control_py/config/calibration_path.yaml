@@ -1,0 +1,1883 @@
+urdf_path: /home/wy/RS/SEEED/REBOOT/reBotArm_control_py/urdf/00-arm-rs_asm-v3/urdf/00-arm-rs_asm-v3.urdf
+urdf_sha256: 79ad843b513c1a5be7536b6ba25438f84289f6336a28b172e2700d78db0f36dc
+home_q:
+- 0.0
+- 1.0
+- 1.2
+- 0.0
+- 0.0
+- 0.0
+segment_samples: 24
+max_segment_dq: 0.35
+limit_margin: 0.05
+settle_time_s: 0.5
+sample_time_s: 1.0
+move_duration_s: 2.0
+max_velocity_rad_s: 0.5
+max_acceleration_rad_s2: 1.5
+mit_kp:
+- 80.0
+- 80.0
+- 80.0
+- 15.0
+- 15.0
+- 15.0
+mit_kd:
+- 4.0
+- 4.0
+- 4.0
+- 1.5
+- 1.5
+- 1.5
+min_clearance_m: 0.0020923157626493234
+total_path_dq: 223.13160000000002
+collision_check_enabled: true
+pose_reports:
+- name: pose_01
+  accepted: true
+  reason: ''
+- name: pose_02
+  accepted: true
+  reason: ''
+- name: pose_03
+  accepted: true
+  reason: ''
+- name: pose_04
+  accepted: true
+  reason: ''
+- name: pose_05
+  accepted: true
+  reason: ''
+- name: pose_06
+  accepted: true
+  reason: ''
+- name: pose_07
+  accepted: true
+  reason: ''
+- name: pose_08
+  accepted: true
+  reason: ''
+- name: pose_09
+  accepted: true
+  reason: ''
+- name: pose_10
+  accepted: true
+  reason: ''
+- name: pose_11
+  accepted: true
+  reason: ''
+- name: pose_12
+  accepted: true
+  reason: ''
+- name: pose_13
+  accepted: true
+  reason: ''
+- name: pose_14
+  accepted: true
+  reason: ''
+- name: pose_15
+  accepted: true
+  reason: ''
+- name: pose_16
+  accepted: true
+  reason: ''
+- name: pose_17
+  accepted: true
+  reason: ''
+- name: pose_18
+  accepted: true
+  reason: ''
+- name: pose_19
+  accepted: true
+  reason: ''
+- name: pose_20
+  accepted: true
+  reason: ''
+- name: pose_21
+  accepted: true
+  reason: ''
+- name: pose_22
+  accepted: true
+  reason: ''
+- name: pose_23
+  accepted: true
+  reason: ''
+- name: pose_24
+  accepted: true
+  reason: ''
+- name: pose_25
+  accepted: true
+  reason: ''
+- name: pose_26
+  accepted: true
+  reason: ''
+- name: pose_27
+  accepted: true
+  reason: ''
+- name: pose_28
+  accepted: true
+  reason: ''
+- name: pose_29
+  accepted: true
+  reason: ''
+- name: pose_30
+  accepted: true
+  reason: ''
+- name: pose_31
+  accepted: true
+  reason: ''
+- name: pose_32
+  accepted: true
+  reason: ''
+- name: pose_33
+  accepted: true
+  reason: ''
+- name: pose_34
+  accepted: true
+  reason: ''
+- name: pose_35
+  accepted: true
+  reason: ''
+- name: pose_36
+  accepted: true
+  reason: ''
+- name: pose_37
+  accepted: true
+  reason: ''
+- name: pose_38
+  accepted: true
+  reason: ''
+- name: pose_39
+  accepted: false
+  reason: '路径段失败: 段内碰撞/越界 @ 中转 2: 自碰撞: ground_plane <-> gripper_end_0 (alpha=0.58)'
+- name: pose_40
+  accepted: false
+  reason: '路径段失败: 段内碰撞/越界 @ 中转 2: 自碰撞: ground_plane <-> gripper_end_0 (alpha=0.67)'
+waypoints:
+- name: home
+  kind: home
+  pose_name: home
+  q:
+  - 0.0
+  - 1.0
+  - 1.2
+  - 0.0
+  - 0.0
+  - 0.0
+  direction: null
+- name: pose_01_approach_minus
+  kind: approach_minus
+  pose_name: pose_01
+  q:
+  - 0.0
+  - 0.06589999999999999
+  - 0.9186
+  - 0.7326
+  - 0.39349999999999996
+  - -0.7533
+  direction: null
+- name: pose_01_target_minus
+  kind: target
+  pose_name: pose_01
+  q:
+  - 0.0
+  - 0.1659
+  - 1.0186
+  - 0.8326
+  - 0.4935
+  - -0.6533
+  direction: minus
+- name: pose_01_approach_plus
+  kind: approach_plus
+  pose_name: pose_01
+  q:
+  - 0.0
+  - 0.2659
+  - 1.1186
+  - 0.9326
+  - 0.5935
+  - -0.5533
+  direction: null
+- name: pose_01_target_plus
+  kind: target
+  pose_name: pose_01
+  q:
+  - 0.0
+  - 0.1659
+  - 1.0186
+  - 0.8326
+  - 0.4935
+  - -0.6533
+  direction: plus
+- name: pose_02_approach_minus
+  kind: approach_minus
+  pose_name: pose_02
+  q:
+  - 0.0
+  - 0.0965
+  - 1.7350999999999999
+  - -0.9771
+  - 0.38370000000000004
+  - 2.5507999999999997
+  direction: null
+- name: pose_02_target_minus
+  kind: target
+  pose_name: pose_02
+  q:
+  - 0.0
+  - 0.1965
+  - 1.8351
+  - -0.8771
+  - 0.4837
+  - 2.6508
+  direction: minus
+- name: pose_02_approach_plus
+  kind: approach_plus
+  pose_name: pose_02
+  q:
+  - 0.0
+  - 0.2965
+  - 1.9351
+  - -0.7771
+  - 0.5837
+  - 2.7508
+  direction: null
+- name: pose_02_target_plus
+  kind: target
+  pose_name: pose_02
+  q:
+  - 0.0
+  - 0.1965
+  - 1.8351
+  - -0.8771
+  - 0.4837
+  - 2.6508
+  direction: plus
+- name: pose_03_approach_minus
+  kind: approach_minus
+  pose_name: pose_03
+  q:
+  - 0.0
+  - 0.07199999999999998
+  - 2.7518
+  - 0.36829999999999996
+  - -1.2315
+  - -0.44899999999999995
+  direction: null
+- name: pose_03_target_minus
+  kind: target
+  pose_name: pose_03
+  q:
+  - 0.0
+  - 0.172
+  - 2.8518
+  - 0.4683
+  - -1.1315
+  - -0.349
+  direction: minus
+- name: pose_03_approach_plus
+  kind: approach_plus
+  pose_name: pose_03
+  q:
+  - 0.0
+  - 0.272
+  - 2.9518
+  - 0.5683
+  - -1.0314999999999999
+  - -0.24899999999999997
+  direction: null
+- name: pose_03_target_plus
+  kind: target
+  pose_name: pose_03
+  q:
+  - 0.0
+  - 0.172
+  - 2.8518
+  - 0.4683
+  - -1.1315
+  - -0.349
+  direction: plus
+- name: pose_04_approach_minus
+  kind: approach_minus
+  pose_name: pose_04
+  q:
+  - 0.0
+  - 0.2571
+  - 2.0225999999999997
+  - -0.5859
+  - 0.555
+  - -1.7792000000000001
+  direction: null
+- name: pose_04_target_minus
+  kind: target
+  pose_name: pose_04
+  q:
+  - 0.0
+  - 0.3571
+  - 2.1226
+  - -0.4859
+  - 0.655
+  - -1.6792
+  direction: minus
+- name: pose_04_approach_plus
+  kind: approach_plus
+  pose_name: pose_04
+  q:
+  - 0.0
+  - 0.45709999999999995
+  - 2.2226
+  - -0.3859
+  - 0.755
+  - -1.5792
+  direction: null
+- name: pose_04_target_plus
+  kind: target
+  pose_name: pose_04
+  q:
+  - 0.0
+  - 0.3571
+  - 2.1226
+  - -0.4859
+  - 0.655
+  - -1.6792
+  direction: plus
+- name: pose_05_approach_minus
+  kind: approach_minus
+  pose_name: pose_05
+  q:
+  - 0.0
+  - 0.3137
+  - 0.4637
+  - -0.5477
+  - -0.1975
+  - -1.5015
+  direction: null
+- name: pose_05_target_minus
+  kind: target
+  pose_name: pose_05
+  q:
+  - 0.0
+  - 0.4137
+  - 0.5637
+  - -0.4477
+  - -0.0975
+  - -1.4015
+  direction: minus
+- name: pose_05_approach_plus
+  kind: approach_plus
+  pose_name: pose_05
+  q:
+  - 0.0
+  - 0.5137
+  - 0.6637
+  - -0.3477
+  - 0.0025000000000000022
+  - -1.3014999999999999
+  direction: null
+- name: pose_05_target_plus
+  kind: target
+  pose_name: pose_05
+  q:
+  - 0.0
+  - 0.4137
+  - 0.5637
+  - -0.4477
+  - -0.0975
+  - -1.4015
+  direction: plus
+- name: pose_06_approach_minus
+  kind: approach_minus
+  pose_name: pose_06
+  q:
+  - 0.0
+  - 0.5266000000000001
+  - 0.5606
+  - -1.1375000000000002
+  - -1.2433
+  - 0.49140000000000006
+  direction: null
+- name: pose_06_target_minus
+  kind: target
+  pose_name: pose_06
+  q:
+  - 0.0
+  - 0.6266
+  - 0.6606
+  - -1.0375
+  - -1.1433
+  - 0.5914
+  direction: minus
+- name: pose_06_approach_plus
+  kind: approach_plus
+  pose_name: pose_06
+  q:
+  - 0.0
+  - 0.7266
+  - 0.7605999999999999
+  - -0.9375000000000001
+  - -1.0433
+  - 0.6914
+  direction: null
+- name: pose_06_target_plus
+  kind: target
+  pose_name: pose_06
+  q:
+  - 0.0
+  - 0.6266
+  - 0.6606
+  - -1.0375
+  - -1.1433
+  - 0.5914
+  direction: plus
+- name: pose_07_approach_minus
+  kind: approach_minus
+  pose_name: pose_07
+  q:
+  - 0.0
+  - 0.5379
+  - 1.7447
+  - 1.1096
+  - 0.5294
+  - 2.0633
+  direction: null
+- name: pose_07_target_minus
+  kind: target
+  pose_name: pose_07
+  q:
+  - 0.0
+  - 0.6379
+  - 1.8447
+  - 1.2096
+  - 0.6294
+  - 2.1633
+  direction: minus
+- name: pose_07_approach_plus
+  kind: approach_plus
+  pose_name: pose_07
+  q:
+  - 0.0
+  - 0.7379
+  - 1.9447
+  - 1.3096
+  - 0.7293999999999999
+  - 2.2633
+  direction: null
+- name: pose_07_target_plus
+  kind: target
+  pose_name: pose_07
+  q:
+  - 0.0
+  - 0.6379
+  - 1.8447
+  - 1.2096
+  - 0.6294
+  - 2.1633
+  direction: plus
+- name: pose_08_approach_minus
+  kind: approach_minus
+  pose_name: pose_08
+  q:
+  - 0.0
+  - 0.5595
+  - 1.5838999999999999
+  - 1.1255
+  - -0.114
+  - -1.4574
+  direction: null
+- name: pose_08_target_minus
+  kind: target
+  pose_name: pose_08
+  q:
+  - 0.0
+  - 0.6595
+  - 1.6839
+  - 1.2255
+  - -0.014
+  - -1.3574
+  direction: minus
+- name: pose_08_approach_plus
+  kind: approach_plus
+  pose_name: pose_08
+  q:
+  - 0.0
+  - 0.7595
+  - 1.7839
+  - 1.3255000000000001
+  - 0.08600000000000001
+  - -1.2573999999999999
+  direction: null
+- name: pose_08_target_plus
+  kind: target
+  pose_name: pose_08
+  q:
+  - 0.0
+  - 0.6595
+  - 1.6839
+  - 1.2255
+  - -0.014
+  - -1.3574
+  direction: plus
+- name: pose_09_approach_minus
+  kind: approach_minus
+  pose_name: pose_09
+  q:
+  - 0.0
+  - 0.7110000000000001
+  - 1.9285999999999999
+  - -0.5735
+  - 1.0296999999999998
+  - -1.5576
+  direction: null
+- name: pose_09_target_minus
+  kind: target
+  pose_name: pose_09
+  q:
+  - 0.0
+  - 0.811
+  - 2.0286
+  - -0.4735
+  - 1.1297
+  - -1.4576
+  direction: minus
+- name: pose_09_approach_plus
+  kind: approach_plus
+  pose_name: pose_09
+  q:
+  - 0.0
+  - 0.911
+  - 2.1286
+  - -0.37349999999999994
+  - 1.2297
+  - -1.3576
+  direction: null
+- name: pose_09_target_plus
+  kind: target
+  pose_name: pose_09
+  q:
+  - 0.0
+  - 0.811
+  - 2.0286
+  - -0.4735
+  - 1.1297
+  - -1.4576
+  direction: plus
+- name: pose_10_approach_minus
+  kind: approach_minus
+  pose_name: pose_10
+  q:
+  - 0.0
+  - 0.6786
+  - 0.7507
+  - -0.5047
+  - -1.4859
+  - 0.6716
+  direction: null
+- name: pose_10_target_minus
+  kind: target
+  pose_name: pose_10
+  q:
+  - 0.0
+  - 0.7786
+  - 0.8507
+  - -0.4047
+  - -1.3859
+  - 0.7716
+  direction: minus
+- name: pose_10_approach_plus
+  kind: approach_plus
+  pose_name: pose_10
+  q:
+  - 0.0
+  - 0.8785999999999999
+  - 0.9507
+  - -0.30469999999999997
+  - -1.2858999999999998
+  - 0.8715999999999999
+  direction: null
+- name: pose_10_target_plus
+  kind: target
+  pose_name: pose_10
+  q:
+  - 0.0
+  - 0.7786
+  - 0.8507
+  - -0.4047
+  - -1.3859
+  - 0.7716
+  direction: plus
+- name: pose_11_approach_minus
+  kind: approach_minus
+  pose_name: pose_11
+  q:
+  - 0.0
+  - 0.6619
+  - 0.19749999999999998
+  - 0.2271
+  - -1.0063
+  - -1.2737
+  direction: null
+- name: pose_11_target_minus
+  kind: target
+  pose_name: pose_11
+  q:
+  - 0.0
+  - 0.7619
+  - 0.2975
+  - 0.3271
+  - -0.9063
+  - -1.1737
+  direction: minus
+- name: pose_11_approach_plus
+  kind: approach_plus
+  pose_name: pose_11
+  q:
+  - 0.0
+  - 0.8619
+  - 0.39749999999999996
+  - 0.42710000000000004
+  - -0.8063
+  - -1.0736999999999999
+  direction: null
+- name: pose_11_target_plus
+  kind: target
+  pose_name: pose_11
+  q:
+  - 0.0
+  - 0.7619
+  - 0.2975
+  - 0.3271
+  - -0.9063
+  - -1.1737
+  direction: plus
+- name: pose_12_approach_minus
+  kind: approach_minus
+  pose_name: pose_12
+  q:
+  - 0.0
+  - 0.7079
+  - 0.4356
+  - -0.8897999999999999
+  - -0.1719
+  - -0.24180000000000001
+  direction: null
+- name: pose_12_target_minus
+  kind: target
+  pose_name: pose_12
+  q:
+  - 0.0
+  - 0.8079
+  - 0.5356
+  - -0.7898
+  - -0.0719
+  - -0.1418
+  direction: minus
+- name: pose_12_approach_plus
+  kind: approach_plus
+  pose_name: pose_12
+  q:
+  - 0.0
+  - 0.9078999999999999
+  - 0.6355999999999999
+  - -0.6898
+  - 0.0281
+  - -0.041800000000000004
+  direction: null
+- name: pose_12_target_plus
+  kind: target
+  pose_name: pose_12
+  q:
+  - 0.0
+  - 0.8079
+  - 0.5356
+  - -0.7898
+  - -0.0719
+  - -0.1418
+  direction: plus
+- name: pose_13_approach_minus
+  kind: approach_minus
+  pose_name: pose_13
+  q:
+  - 0.0
+  - 0.9440000000000001
+  - 0.8629
+  - -0.7186
+  - -0.7704
+  - -0.20340000000000003
+  direction: null
+- name: pose_13_target_minus
+  kind: target
+  pose_name: pose_13
+  q:
+  - 0.0
+  - 1.044
+  - 0.9629
+  - -0.6186
+  - -0.6704
+  - -0.1034
+  direction: minus
+- name: pose_13_approach_plus
+  kind: approach_plus
+  pose_name: pose_13
+  q:
+  - 0.0
+  - 1.1440000000000001
+  - 1.0629
+  - -0.5186000000000001
+  - -0.5704
+  - -0.0034000000000000002
+  direction: null
+- name: pose_13_target_plus
+  kind: target
+  pose_name: pose_13
+  q:
+  - 0.0
+  - 1.044
+  - 0.9629
+  - -0.6186
+  - -0.6704
+  - -0.1034
+  direction: plus
+- name: pose_14_approach_minus
+  kind: approach_minus
+  pose_name: pose_14
+  q:
+  - 0.0
+  - 0.9315000000000001
+  - 1.4373
+  - -0.8105
+  - 0.8478
+  - -2.0192
+  direction: null
+- name: pose_14_target_minus
+  kind: target
+  pose_name: pose_14
+  q:
+  - 0.0
+  - 1.0315
+  - 1.5373
+  - -0.7105
+  - 0.9478
+  - -1.9192
+  direction: minus
+- name: pose_14_approach_plus
+  kind: approach_plus
+  pose_name: pose_14
+  q:
+  - 0.0
+  - 1.1315000000000002
+  - 1.6373000000000002
+  - -0.6105
+  - 1.0478
+  - -1.8192
+  direction: null
+- name: pose_14_target_plus
+  kind: target
+  pose_name: pose_14
+  q:
+  - 0.0
+  - 1.0315
+  - 1.5373
+  - -0.7105
+  - 0.9478
+  - -1.9192
+  direction: plus
+- name: pose_15_approach_minus
+  kind: approach_minus
+  pose_name: pose_15
+  q:
+  - 0.0
+  - 1.1199999999999999
+  - 0.5171
+  - 0.6015
+  - 0.21109999999999998
+  - -1.8451000000000002
+  direction: null
+- name: pose_15_target_minus
+  kind: target
+  pose_name: pose_15
+  q:
+  - 0.0
+  - 1.22
+  - 0.6171
+  - 0.7015
+  - 0.3111
+  - -1.7451
+  direction: minus
+- name: pose_15_approach_plus
+  kind: approach_plus
+  pose_name: pose_15
+  q:
+  - 0.0
+  - 1.32
+  - 0.7171
+  - 0.8015
+  - 0.4111
+  - -1.6451
+  direction: null
+- name: pose_15_target_plus
+  kind: target
+  pose_name: pose_15
+  q:
+  - 0.0
+  - 1.22
+  - 0.6171
+  - 0.7015
+  - 0.3111
+  - -1.7451
+  direction: plus
+- name: pose_16_approach_minus
+  kind: approach_minus
+  pose_name: pose_16
+  q:
+  - 0.0
+  - 1.0903999999999998
+  - 0.7229
+  - -1.2604000000000002
+  - 0.2306
+  - 0.12179999999999999
+  direction: null
+- name: pose_16_target_minus
+  kind: target
+  pose_name: pose_16
+  q:
+  - 0.0
+  - 1.1904
+  - 0.8229
+  - -1.1604
+  - 0.3306
+  - 0.2218
+  direction: minus
+- name: pose_16_approach_plus
+  kind: approach_plus
+  pose_name: pose_16
+  q:
+  - 0.0
+  - 1.2904
+  - 0.9228999999999999
+  - -1.0604
+  - 0.4306
+  - 0.3218
+  direction: null
+- name: pose_16_target_plus
+  kind: target
+  pose_name: pose_16
+  q:
+  - 0.0
+  - 1.1904
+  - 0.8229
+  - -1.1604
+  - 0.3306
+  - 0.2218
+  direction: plus
+- name: pose_17_approach_minus
+  kind: approach_minus
+  pose_name: pose_17
+  q:
+  - 0.0
+  - 1.4138
+  - 1.2431999999999999
+  - 0.2315
+  - -0.6233
+  - -2.0262
+  direction: null
+- name: pose_17_target_minus
+  kind: target
+  pose_name: pose_17
+  q:
+  - 0.0
+  - 1.5138
+  - 1.3432
+  - 0.3315
+  - -0.5233
+  - -1.9262
+  direction: minus
+- name: pose_17_approach_plus
+  kind: approach_plus
+  pose_name: pose_17
+  q:
+  - 0.0
+  - 1.6138000000000001
+  - 1.4432
+  - 0.4315
+  - -0.4233
+  - -1.8261999999999998
+  direction: null
+- name: pose_17_target_plus
+  kind: target
+  pose_name: pose_17
+  q:
+  - 0.0
+  - 1.5138
+  - 1.3432
+  - 0.3315
+  - -0.5233
+  - -1.9262
+  direction: plus
+- name: pose_18_approach_minus
+  kind: approach_minus
+  pose_name: pose_18
+  q:
+  - 0.0
+  - 1.1627999999999998
+  - 0.6091
+  - 0.936
+  - 1.2239
+  - -0.44920000000000004
+  direction: null
+- name: pose_18_target_minus
+  kind: target
+  pose_name: pose_18
+  q:
+  - 0.0
+  - 1.2628
+  - 0.7091
+  - 1.036
+  - 1.3239
+  - -0.3492
+  direction: minus
+- name: pose_18_approach_plus
+  kind: approach_plus
+  pose_name: pose_18
+  q:
+  - 0.0
+  - 1.3628
+  - 0.8090999999999999
+  - 1.1360000000000001
+  - 1.4239000000000002
+  - -0.2492
+  direction: null
+- name: pose_18_target_plus
+  kind: target
+  pose_name: pose_18
+  q:
+  - 0.0
+  - 1.2628
+  - 0.7091
+  - 1.036
+  - 1.3239
+  - -0.3492
+  direction: plus
+- name: pose_19_approach_minus
+  kind: approach_minus
+  pose_name: pose_19
+  q:
+  - 0.0
+  - 1.2697999999999998
+  - 0.8002
+  - 1.2050999999999998
+  - -1.3370000000000002
+  - -0.6476
+  direction: null
+- name: pose_19_target_minus
+  kind: target
+  pose_name: pose_19
+  q:
+  - 0.0
+  - 1.3698
+  - 0.9002
+  - 1.3051
+  - -1.237
+  - -0.5476
+  direction: minus
+- name: pose_19_approach_plus
+  kind: approach_plus
+  pose_name: pose_19
+  q:
+  - 0.0
+  - 1.4698
+  - 1.0002
+  - 1.4051
+  - -1.137
+  - -0.4476
+  direction: null
+- name: pose_19_target_plus
+  kind: target
+  pose_name: pose_19
+  q:
+  - 0.0
+  - 1.3698
+  - 0.9002
+  - 1.3051
+  - -1.237
+  - -0.5476
+  direction: plus
+- name: pose_20_approach_minus
+  kind: approach_minus
+  pose_name: pose_20
+  q:
+  - 0.0
+  - 1.2088999999999999
+  - 0.6964
+  - 0.684
+  - -0.9295
+  - 0.21230000000000002
+  direction: null
+- name: pose_20_target_minus
+  kind: target
+  pose_name: pose_20
+  q:
+  - 0.0
+  - 1.3089
+  - 0.7964
+  - 0.784
+  - -0.8295
+  - 0.3123
+  direction: minus
+- name: pose_20_approach_plus
+  kind: approach_plus
+  pose_name: pose_20
+  q:
+  - 0.0
+  - 1.4089
+  - 0.8964
+  - 0.884
+  - -0.7295
+  - 0.4123
+  direction: null
+- name: pose_20_target_plus
+  kind: target
+  pose_name: pose_20
+  q:
+  - 0.0
+  - 1.3089
+  - 0.7964
+  - 0.784
+  - -0.8295
+  - 0.3123
+  direction: plus
+- name: pose_21_approach_minus
+  kind: approach_minus
+  pose_name: pose_21
+  q:
+  - 0.0
+  - 1.5564
+  - 1.4710999999999999
+  - -0.5664
+  - -0.7084
+  - -1.409
+  direction: null
+- name: pose_21_target_minus
+  kind: target
+  pose_name: pose_21
+  q:
+  - 0.0
+  - 1.6564
+  - 1.5711
+  - -0.4664
+  - -0.6084
+  - -1.309
+  direction: minus
+- name: pose_21_approach_plus
+  kind: approach_plus
+  pose_name: pose_21
+  q:
+  - 0.0
+  - 1.7564000000000002
+  - 1.6711
+  - -0.36639999999999995
+  - -0.5084000000000001
+  - -1.2089999999999999
+  direction: null
+- name: pose_21_target_plus
+  kind: target
+  pose_name: pose_21
+  q:
+  - 0.0
+  - 1.6564
+  - 1.5711
+  - -0.4664
+  - -0.6084
+  - -1.309
+  direction: plus
+- name: pose_22_approach_minus
+  kind: approach_minus
+  pose_name: pose_22
+  q:
+  - 0.0
+  - 1.4747999999999999
+  - 1.3973
+  - 0.9733999999999999
+  - 1.1522
+  - -2.9357
+  direction: null
+- name: pose_22_target_minus
+  kind: target
+  pose_name: pose_22
+  q:
+  - 0.0
+  - 1.5748
+  - 1.4973
+  - 1.0734
+  - 1.2522
+  - -2.8357
+  direction: minus
+- name: pose_22_approach_plus
+  kind: approach_plus
+  pose_name: pose_22
+  q:
+  - 0.0
+  - 1.6748
+  - 1.5973000000000002
+  - 1.1734
+  - 1.3522
+  - -2.7357
+  direction: null
+- name: pose_22_target_plus
+  kind: target
+  pose_name: pose_22
+  q:
+  - 0.0
+  - 1.5748
+  - 1.4973
+  - 1.0734
+  - 1.2522
+  - -2.8357
+  direction: plus
+- name: pose_23_approach_minus
+  kind: approach_minus
+  pose_name: pose_23
+  q:
+  - 0.0
+  - 1.7161
+  - 0.35240000000000005
+  - 0.594
+  - 1.0103
+  - -2.0924
+  direction: null
+- name: pose_23_target_minus
+  kind: target
+  pose_name: pose_23
+  q:
+  - 0.0
+  - 1.8161
+  - 0.4524
+  - 0.694
+  - 1.1103
+  - -1.9924
+  direction: minus
+- name: pose_23_approach_plus
+  kind: approach_plus
+  pose_name: pose_23
+  q:
+  - 0.0
+  - 1.9161000000000001
+  - 0.5524
+  - 0.7939999999999999
+  - 1.2103000000000002
+  - -1.8923999999999999
+  direction: null
+- name: pose_23_target_plus
+  kind: target
+  pose_name: pose_23
+  q:
+  - 0.0
+  - 1.8161
+  - 0.4524
+  - 0.694
+  - 1.1103
+  - -1.9924
+  direction: plus
+- name: pose_24_approach_minus
+  kind: approach_minus
+  pose_name: pose_24
+  q:
+  - 0.0
+  - 1.5460999999999998
+  - 1.0967
+  - -0.5288
+  - -0.05450000000000001
+  - -3.0460000000000003
+  direction: null
+- name: pose_24_target_minus
+  kind: target
+  pose_name: pose_24
+  q:
+  - 0.0
+  - 1.6461
+  - 1.1967
+  - -0.4288
+  - 0.0455
+  - -2.946
+  direction: minus
+- name: pose_24_approach_plus
+  kind: approach_plus
+  pose_name: pose_24
+  q:
+  - 0.0
+  - 1.7461
+  - 1.2967000000000002
+  - -0.3288
+  - 0.14550000000000002
+  - -2.846
+  direction: null
+- name: pose_24_target_plus
+  kind: target
+  pose_name: pose_24
+  q:
+  - 0.0
+  - 1.6461
+  - 1.1967
+  - -0.4288
+  - 0.0455
+  - -2.946
+  direction: plus
+- name: pose_25_approach_minus
+  kind: approach_minus
+  pose_name: pose_25
+  q:
+  - 0.0
+  - 1.8625999999999998
+  - 2.5452
+  - -1.2553
+  - -0.1446
+  - -0.2126
+  direction: null
+- name: pose_25_target_minus
+  kind: target
+  pose_name: pose_25
+  q:
+  - 0.0
+  - 1.9626
+  - 2.6452
+  - -1.1553
+  - -0.0446
+  - -0.1126
+  direction: minus
+- name: pose_25_approach_plus
+  kind: approach_plus
+  pose_name: pose_25
+  q:
+  - 0.0
+  - 2.0625999999999998
+  - 2.7452
+  - -1.0553
+  - 0.055400000000000005
+  - -0.0126
+  direction: null
+- name: pose_25_target_plus
+  kind: target
+  pose_name: pose_25
+  q:
+  - 0.0
+  - 1.9626
+  - 2.6452
+  - -1.1553
+  - -0.0446
+  - -0.1126
+  direction: plus
+- name: pose_26_approach_minus
+  kind: approach_minus
+  pose_name: pose_26
+  q:
+  - 0.0
+  - 1.9668999999999999
+  - 2.7972
+  - 0.4799
+  - -0.7334999999999999
+  - 0.9207
+  direction: null
+- name: pose_26_target_minus
+  kind: target
+  pose_name: pose_26
+  q:
+  - 0.0
+  - 2.0669
+  - 2.8972
+  - 0.5799
+  - -0.6335
+  - 1.0207
+  direction: minus
+- name: pose_26_approach_plus
+  kind: approach_plus
+  pose_name: pose_26
+  q:
+  - 0.0
+  - 2.1669
+  - 2.9972000000000003
+  - 0.6799
+  - -0.5335
+  - 1.1207
+  direction: null
+- name: pose_26_target_plus
+  kind: target
+  pose_name: pose_26
+  q:
+  - 0.0
+  - 2.0669
+  - 2.8972
+  - 0.5799
+  - -0.6335
+  - 1.0207
+  direction: plus
+- name: pose_27_approach_minus
+  kind: approach_minus
+  pose_name: pose_27
+  q:
+  - 0.0
+  - 1.8408
+  - 2.2276
+  - 0.3922
+  - 1.2370999999999999
+  - 2.1003
+  direction: null
+- name: pose_27_target_minus
+  kind: target
+  pose_name: pose_27
+  q:
+  - 0.0
+  - 1.9408
+  - 2.3276
+  - 0.4922
+  - 1.3371
+  - 2.2003
+  direction: minus
+- name: pose_27_approach_plus
+  kind: approach_plus
+  pose_name: pose_27
+  q:
+  - 0.0
+  - 2.0408
+  - 2.4276
+  - 0.5922000000000001
+  - 1.4371
+  - 2.3003
+  direction: null
+- name: pose_27_target_plus
+  kind: target
+  pose_name: pose_27
+  q:
+  - 0.0
+  - 1.9408
+  - 2.3276
+  - 0.4922
+  - 1.3371
+  - 2.2003
+  direction: plus
+- name: pose_28_approach_minus
+  kind: approach_minus
+  pose_name: pose_28
+  q:
+  - 0.0
+  - 1.7533999999999998
+  - 0.8419
+  - 0.9147
+  - 0.18239999999999998
+  - -1.0345
+  direction: null
+- name: pose_28_target_minus
+  kind: target
+  pose_name: pose_28
+  q:
+  - 0.0
+  - 1.8534
+  - 0.9419
+  - 1.0147
+  - 0.2824
+  - -0.9345
+  direction: minus
+- name: pose_28_approach_plus
+  kind: approach_plus
+  pose_name: pose_28
+  q:
+  - 0.0
+  - 1.9534
+  - 1.0419
+  - 1.1147
+  - 0.38239999999999996
+  - -0.8345
+  direction: null
+- name: pose_28_target_plus
+  kind: target
+  pose_name: pose_28
+  q:
+  - 0.0
+  - 1.8534
+  - 0.9419
+  - 1.0147
+  - 0.2824
+  - -0.9345
+  direction: plus
+- name: pose_29_approach_minus
+  kind: approach_minus
+  pose_name: pose_29
+  q:
+  - 0.0
+  - 2.0461
+  - 2.2123
+  - -1.4957
+  - -1.24
+  - 2.8609999999999998
+  direction: null
+- name: pose_29_target_minus
+  kind: target
+  pose_name: pose_29
+  q:
+  - 0.0
+  - 2.1461
+  - 2.3123
+  - -1.3957
+  - -1.14
+  - 2.961
+  direction: minus
+- name: pose_29_approach_plus
+  kind: approach_plus
+  pose_name: pose_29
+  q:
+  - 0.0
+  - 2.2461
+  - 2.4123
+  - -1.2956999999999999
+  - -1.0399999999999998
+  - 3.061
+  direction: null
+- name: pose_29_target_plus
+  kind: target
+  pose_name: pose_29
+  q:
+  - 0.0
+  - 2.1461
+  - 2.3123
+  - -1.3957
+  - -1.14
+  - 2.961
+  direction: plus
+- name: pose_30_approach_minus
+  kind: approach_minus
+  pose_name: pose_30
+  q:
+  - 0.0
+  - 2.255
+  - 2.518
+  - -0.164
+  - -1.0272000000000001
+  - 0.10389999999999999
+  direction: null
+- name: pose_30_target_minus
+  kind: target
+  pose_name: pose_30
+  q:
+  - 0.0
+  - 2.355
+  - 2.618
+  - -0.064
+  - -0.9272
+  - 0.2039
+  direction: minus
+- name: pose_30_approach_plus
+  kind: approach_plus
+  pose_name: pose_30
+  q:
+  - 0.0
+  - 2.455
+  - 2.718
+  - 0.036000000000000004
+  - -0.8272
+  - 0.3039
+  direction: null
+- name: pose_30_target_plus
+  kind: target
+  pose_name: pose_30
+  q:
+  - 0.0
+  - 2.355
+  - 2.618
+  - -0.064
+  - -0.9272
+  - 0.2039
+  direction: plus
+- name: pose_31_approach_minus
+  kind: approach_minus
+  pose_name: pose_31
+  q:
+  - 0.0
+  - 2.3162
+  - 2.0406
+  - 0.5248
+  - 0.551
+  - 0.004400000000000001
+  direction: null
+- name: pose_31_target_minus
+  kind: target
+  pose_name: pose_31
+  q:
+  - 0.0
+  - 2.4162
+  - 2.1406
+  - 0.6248
+  - 0.651
+  - 0.1044
+  direction: minus
+- name: pose_31_approach_plus
+  kind: approach_plus
+  pose_name: pose_31
+  q:
+  - 0.0
+  - 2.5162
+  - 2.2406
+  - 0.7248
+  - 0.751
+  - 0.20440000000000003
+  direction: null
+- name: pose_31_target_plus
+  kind: target
+  pose_name: pose_31
+  q:
+  - 0.0
+  - 2.4162
+  - 2.1406
+  - 0.6248
+  - 0.651
+  - 0.1044
+  direction: plus
+- name: pose_32_approach_minus
+  kind: approach_minus
+  pose_name: pose_32
+  q:
+  - 0.0
+  - 2.0815
+  - 2.5452
+  - 0.9651
+  - 0.4867
+  - 2.5006
+  direction: null
+- name: pose_32_target_minus
+  kind: target
+  pose_name: pose_32
+  q:
+  - 0.0
+  - 2.1815
+  - 2.6452
+  - 1.0651
+  - 0.5867
+  - 2.6006
+  direction: minus
+- name: pose_32_approach_plus
+  kind: approach_plus
+  pose_name: pose_32
+  q:
+  - 0.0
+  - 2.2815000000000003
+  - 2.7452
+  - 1.1651
+  - 0.6867
+  - 2.7006
+  direction: null
+- name: pose_32_target_plus
+  kind: target
+  pose_name: pose_32
+  q:
+  - 0.0
+  - 2.1815
+  - 2.6452
+  - 1.0651
+  - 0.5867
+  - 2.6006
+  direction: plus
+- name: pose_33_approach_minus
+  kind: approach_minus
+  pose_name: pose_33
+  q:
+  - 0.0
+  - 2.601
+  - 2.3478
+  - 0.9267
+  - -0.11180000000000001
+  - -0.8573
+  direction: null
+- name: pose_33_target_minus
+  kind: target
+  pose_name: pose_33
+  q:
+  - 0.0
+  - 2.701
+  - 2.4478
+  - 1.0267
+  - -0.0118
+  - -0.7573
+  direction: minus
+- name: pose_33_approach_plus
+  kind: approach_plus
+  pose_name: pose_33
+  q:
+  - 0.0
+  - 2.801
+  - 2.5478
+  - 1.1267
+  - 0.0882
+  - -0.6573
+  direction: null
+- name: pose_33_target_plus
+  kind: target
+  pose_name: pose_33
+  q:
+  - 0.0
+  - 2.701
+  - 2.4478
+  - 1.0267
+  - -0.0118
+  - -0.7573
+  direction: plus
+- name: pose_34_approach_minus
+  kind: approach_minus
+  pose_name: pose_34
+  q:
+  - 0.0
+  - 2.4589
+  - 1.5406
+  - 0.7896
+  - -1.0772
+  - 0.5034000000000001
+  direction: null
+- name: pose_34_target_minus
+  kind: target
+  pose_name: pose_34
+  q:
+  - 0.0
+  - 2.5589
+  - 1.6406
+  - 0.8896
+  - -0.9772
+  - 0.6034
+  direction: minus
+- name: pose_34_approach_plus
+  kind: approach_plus
+  pose_name: pose_34
+  q:
+  - 0.0
+  - 2.6589
+  - 1.7406000000000001
+  - 0.9895999999999999
+  - -0.8772
+  - 0.7034
+  direction: null
+- name: pose_34_target_plus
+  kind: target
+  pose_name: pose_34
+  q:
+  - 0.0
+  - 2.5589
+  - 1.6406
+  - 0.8896
+  - -0.9772
+  - 0.6034
+  direction: plus
+- name: pose_35_approach_minus
+  kind: approach_minus
+  pose_name: pose_35
+  q:
+  - 0.0
+  - 2.6
+  - 1.8619999999999999
+  - 1.1581
+  - 0.8152
+  - 0.9480000000000001
+  direction: null
+- name: pose_35_target_minus
+  kind: target
+  pose_name: pose_35
+  q:
+  - 0.0
+  - 2.7
+  - 1.962
+  - 1.2581
+  - 0.9152
+  - 1.048
+  direction: minus
+- name: pose_35_approach_plus
+  kind: approach_plus
+  pose_name: pose_35
+  q:
+  - 0.0
+  - 2.8000000000000003
+  - 2.062
+  - 1.3581
+  - 1.0152
+  - 1.1480000000000001
+  direction: null
+- name: pose_35_target_plus
+  kind: target
+  pose_name: pose_35
+  q:
+  - 0.0
+  - 2.7
+  - 1.962
+  - 1.2581
+  - 0.9152
+  - 1.048
+  direction: plus
+- name: pose_36_approach_minus
+  kind: approach_minus
+  pose_name: pose_36
+  q:
+  - 0.0
+  - 2.4585
+  - 2.2391
+  - -1.2292
+  - 0.014599999999999988
+  - 1.3933
+  direction: null
+- name: pose_36_target_minus
+  kind: target
+  pose_name: pose_36
+  q:
+  - 0.0
+  - 2.5585
+  - 2.3391
+  - -1.1292
+  - 0.1146
+  - 1.4933
+  direction: minus
+- name: pose_36_approach_plus
+  kind: approach_plus
+  pose_name: pose_36
+  q:
+  - 0.0
+  - 2.6585
+  - 2.4391000000000003
+  - -1.0292
+  - 0.2146
+  - 1.5933000000000002
+  direction: null
+- name: pose_36_target_plus
+  kind: target
+  pose_name: pose_36
+  q:
+  - 0.0
+  - 2.5585
+  - 2.3391
+  - -1.1292
+  - 0.1146
+  - 1.4933
+  direction: plus
+- name: pose_37_approach_minus
+  kind: approach_minus
+  pose_name: pose_37
+  q:
+  - 0.0
+  - 2.7161999999999997
+  - 2.5408
+  - -0.22089999999999999
+  - -1.1755
+  - 2.7613
+  direction: null
+- name: pose_37_target_minus
+  kind: target
+  pose_name: pose_37
+  q:
+  - 0.0
+  - 2.8162
+  - 2.6408
+  - -0.1209
+  - -1.0755
+  - 2.8613
+  direction: minus
+- name: pose_37_approach_plus
+  kind: approach_plus
+  pose_name: pose_37
+  q:
+  - 0.0
+  - 2.9162
+  - 2.7408
+  - -0.020899999999999988
+  - -0.9754999999999999
+  - 2.9613
+  direction: null
+- name: pose_37_target_plus
+  kind: target
+  pose_name: pose_37
+  q:
+  - 0.0
+  - 2.8162
+  - 2.6408
+  - -0.1209
+  - -1.0755
+  - 2.8613
+  direction: plus
+- name: pose_38_approach_minus
+  kind: approach_minus
+  pose_name: pose_38
+  q:
+  - 0.0
+  - 2.62
+  - 1.7313999999999998
+  - 0.5775
+  - 1.2405
+  - 0.225
+  direction: null
+- name: pose_38_target_minus
+  kind: target
+  pose_name: pose_38
+  q:
+  - 0.0
+  - 2.72
+  - 1.8314
+  - 0.6775
+  - 1.3405
+  - 0.325
+  direction: minus
+- name: pose_38_approach_plus
+  kind: approach_plus
+  pose_name: pose_38
+  q:
+  - 0.0
+  - 2.8200000000000003
+  - 1.9314
+  - 0.7775
+  - 1.4405000000000001
+  - 0.42500000000000004
+  direction: null
+- name: pose_38_target_plus
+  kind: target
+  pose_name: pose_38
+  q:
+  - 0.0
+  - 2.72
+  - 1.8314
+  - 0.6775
+  - 1.3405
+  - 0.325
+  direction: plus
+- name: pose_39_transit_0
+  kind: transit
+  pose_name: pose_39
+  q:
+  - 0.0
+  - 2.740025
+  - 1.9475624999999999
+  - 0.47964999999999997
+  - 1.008675
+  - 0.024125000000000008
+  direction: null
+- name: pose_39_transit_1
+  kind: transit
+  pose_name: pose_39
+  q:
+  - 0.0
+  - 2.76005
+  - 2.063725
+  - 0.28179999999999994
+  - 0.67685
+  - -0.27674999999999994
+  direction: null
+- name: pose_40_transit_0
+  kind: transit
+  pose_name: pose_40
+  q:
+  - 0.0
+  - 2.7130666666666667
+  - 1.8864444444444441
+  - 0.5014111111111111
+  - 1.2933555555555554
+  - -0.017777777777777837
+  direction: null
+- name: pose_40_transit_1
+  kind: transit
+  pose_name: pose_40
+  q:
+  - 0.0
+  - 2.7061333333333337
+  - 1.9414888888888888
+  - 0.32532222222222223
+  - 1.2462111111111112
+  - -0.36055555555555563
+  direction: null

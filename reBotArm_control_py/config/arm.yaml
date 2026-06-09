@@ -1,0 +1,100 @@
+# reBotArm B601-RS 机械臂配置文件 (RobStride)
+
+# 通信方式: SocketCAN (can0)
+channel: can0
+
+# 控制循环频率 (Hz)
+rate: 500
+
+joints:
+  # joint1-3: RS06
+  - name: joint1
+    motor_id: 0x01
+    feedback_id: 0xFD
+    model: "rs-06"
+    vendor: "robstride"
+    MIT:
+      kp: 80.0
+      kd: 4.0
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 5.0
+
+  - name: joint2
+    motor_id: 0x02
+    feedback_id: 0xFD
+    model: "rs-06"
+    vendor: "robstride"
+    MIT:
+      kp: 80.0
+      kd: 4.0
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 5.0
+
+  - name: joint3
+    motor_id: 0x03
+    feedback_id: 0xFD
+    model: "rs-06"
+    vendor: "robstride"
+    MIT:
+      kp: 80.0
+      kd: 4.0
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 5.0
+
+  # joint4-6: RS00
+  - name: joint4
+    motor_id: 0x04
+    feedback_id: 0xFD
+    model: "rs-00"
+    vendor: "robstride"
+    MIT:
+      kp: 15.0
+      kd: 1.5
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 3.0
+
+  - name: joint5
+    motor_id: 0x05
+    feedback_id: 0xFD
+    model: "rs-00"
+    vendor: "robstride"
+    MIT:
+      kp: 15.0
+      kd: 1.5
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 3.0
+
+  - name: joint6
+    motor_id: 0x06
+    feedback_id: 0xFD
+    model: "rs-00"
+    vendor: "robstride"
+    MIT:
+      kp: 15.0
+      kd: 1.5
+    POS_VEL:
+      vel_kp: 0.0
+      vel_ki: 0.0
+      pos_kp: 0.0
+      pos_ki: 0.0
+      vlim: 3.0

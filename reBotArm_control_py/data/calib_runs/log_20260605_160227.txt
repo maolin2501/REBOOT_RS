@@ -1,0 +1,15 @@
+============================================================
+  程序 2：标定数据采集
+  路径: /home/wy/RS/SEEED/REBOOT/reBotArm_control_py/config/calibration_path.yaml
+  waypoint: 162  target: 80
+  URDF SHA256: 79ad843b513c1a5b...
+============================================================
+[enable] joint1 使能失败（已重试 10 次）: status_code=0
+[enable] joint2 使能失败（已重试 10 次）: status_code=0
+[enable] joint3 使能失败（已重试 10 次）: status_code=0
+[enable] joint4 使能失败（已重试 10 次）: status_code=0
+[enable] joint5 使能失败（已重试 10 次）: status_code=0
+[enable] joint6 使能失败（已重试 10 次）: status_code=0
+[enable] 未就绪电机: ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
+[使能] OK
+  [1/162] home           home                          [2/162] approach_minus pose_01_approach_minus        [3/162] target         pose_01_target_minus          [4/162] approach_plus  pose_01_approach_plus         [5/162] target         pose_01_target_plus           [6/162] approach_minus pose_02_approach_minus        [7/162] target         pose_02_target_minus          [8/162] approach_plus  pose_02_approach_plus         [9/162] target         pose_02_target_plus           [10/162] approach_minus pose_03_approach_minus        [11/162] target         pose_03_target_minus          [12/162] approach_plus  pose_03_approach_plus         [13/162] target         pose_03_target_plus         

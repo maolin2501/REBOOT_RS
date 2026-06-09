@@ -1,0 +1,18 @@
+============================================================
+  程序 2：标定数据采集
+  路径: /home/wy/RS/SEEED/REBOOT/reBotArm_control_py/config/calibration_path.yaml
+  waypoint: 162  target: 80
+  URDF SHA256: 79ad843b513c1a5b...
+============================================================
+[enable] joint1 使能失败（已重试 10 次）: status_code=0
+[enable] joint2 使能失败（已重试 10 次）: status_code=0
+[enable] joint3 使能失败（已重试 10 次）: status_code=0
+[enable] joint4 使能失败（已重试 10 次）: status_code=0
+[enable] joint5 使能失败（已重试 10 次）: status_code=0
+[enable] joint6 使能失败（已重试 10 次）: status_code=0
+[enable] 未就绪电机: ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
+[使能] OK
+
+[异常] not enough values to unpack (expected 3, got 2)
+[断开] OK
+[提示] 无已保存数据，请使用 --resume 续采

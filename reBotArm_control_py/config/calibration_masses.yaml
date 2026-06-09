@@ -1,0 +1,14 @@
+# 重力补偿标定 — 各连杆实测质量 (kg)
+# 请用电子秤测量每个 link（含电机、紧固件、线束）后填写。
+# 初值来自 URDF 00-arm-rs_asm-v3.urdf 缩减 6-DOF 模型 body 总质量，标定质心前务必更新为实测值。
+
+masses_kg:
+  link1: 0.4655    # 新 URDF link1 本体质量
+  link2: 1.9720
+  link3: 1.0620
+  link4: 0.6600
+  link5: 0.1501
+  link6: 0.8304    # 含夹爪 gripper_left/right/end（缩减 6-DOF 模型 body6 总质量）
+
+# base_link 固定于机座，不参与标定
+# gripper_end 质量保留 URDF 名义值，仅标定 link1–link6 质心
