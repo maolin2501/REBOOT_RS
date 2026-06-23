@@ -41,6 +41,8 @@ def main() -> int:
     parser.add_argument("--no-collision", action="store_true", help="仅关节限位，不做碰撞检测")
     parser.add_argument("--allow-partial", action="store_true",
                         help="部分位姿被拒时，仅用采纳位姿写入路径（不中断）")
+    parser.add_argument("--ground-z", type=float, default=0.0,
+                        help="地面碰撞面高度(m)，设>0可强制最小离地间距")
     args = parser.parse_args()
 
     cfg = load_seed_config(args.poses)
@@ -58,6 +60,7 @@ def main() -> int:
         limit_margin=cfg.limit_margin,
         enable_collision=not args.no_collision,
         enable_ground=not args.no_collision,
+        ground_z=args.ground_z,
     )
     has_ground = any(
         validator.geom_model.geometryObjects[p.first].name == "ground_plane"

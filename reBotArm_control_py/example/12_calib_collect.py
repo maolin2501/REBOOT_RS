@@ -106,9 +106,28 @@ def main() -> int:
     signal.signal(signal.SIGINT, _sigint)
 
     try:
+        # 使能前先读取当前位置，用于使能后立即锁定
+        for _ in range(10):
+            arm._request_and_poll()
+            time.sleep(0.02)
+        q_now = arm.get_positions(request=True)
+
         arm.enable()
         arm.mode_mit(kp=plan.mit_kp, kd=plan.mit_kd)
-        print("[使能] OK")
+
+        # 使能+切模式后立即发送"锁住当前位置"指令，消除飞车窗口
+        for _ in range(20):
+            arm.mit(
+                pos=q_now,
+                vel=np.zeros(arm.num_joints),
+                kp=plan.mit_kp,
+                kd=plan.mit_kd,
+                tau=np.zeros(arm.num_joints),
+                request_feedback=True,
+            )
+            time.sleep(1.0 / arm._rate)
+        q_now = arm.get_positions(request=True)
+        print(f"[使能] OK  (锁定位置: {np.rad2deg(q_now).round(1)}°)")
 
         # 运动前限位复检
         for wp in plan.waypoints:

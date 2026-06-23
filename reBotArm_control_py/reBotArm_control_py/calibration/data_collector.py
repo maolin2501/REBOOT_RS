@@ -155,10 +155,18 @@ def run_collection(
     old_handler = signal.signal(signal.SIGINT, _sigint)
 
     try:
-        # 预热反馈：冷启动单次读取可能返回 0/陈旧值，先多轮请求-轮询稳定后再读
-        for _ in range(10):
-            arm._request_and_poll()
-            time.sleep(0.02)
+        # 预热反馈并持续锁定当前位置，避免使能后无指令导致飞车
+        q_curr = arm.get_positions(request=True)
+        for _ in range(20):
+            arm.mit(
+                pos=q_curr,
+                vel=np.zeros(arm.num_joints),
+                kp=plan.mit_kp,
+                kd=plan.mit_kd,
+                tau=np.zeros(arm.num_joints),
+                request_feedback=True,
+            )
+            time.sleep(1.0 / arm._rate)
         q_curr = arm.get_positions(request=True)
 
         for i, wp in enumerate(plan.waypoints):
